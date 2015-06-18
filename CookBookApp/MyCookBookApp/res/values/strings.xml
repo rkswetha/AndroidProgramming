@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyCookBookApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_name">Login Name: </string>
+    <string name="password">Password: </string>
+    
+    <string name="login_button">Login</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="save_button">Save</string>
+    <string name="edit_button">Edit</string>
+    <string name="delete_button">Delete</string>
+    
+    <string name="action_edit">Edit</string>
+    <string name="action_save">Save</string>
+    <string name="action_addToFav">Add to Fav</string>
+    <string name="action_delete">Delete</string>
+    
+    <string name="null_str"></string>
+    <string name="add_recipe_str">AddRecipe</string>
+    <string name="myfavlist_str">Fav</string>
+    <string name="allRecipelist_str">AllRecipes</string>
+    
+    <string name="title_activity_my_fav_recipe">My Favourites</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_list_all_recipes">Browse All Recipes</string>
+    <string name="title_activity_new_recipe">Add a recipe</string>
+	<string name="title_activity_load_recipe">LoadRecipe</string>
+    <string name="title_activity_load_fav_recipe">LoadFavRecipe</string>
+    
+    <string name="recipe_name">Recipe Name: </string>
+    <string name="recipe_ingredients">Ingredients: </string>
+    <string name="procedure_string">Procedure:</string>
+    <string name="prepartionTime_string">Prep time:</string>
+    <string name="addtofav_button">Add to fav</string>
+    
+</resources>

@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/green"
+    tools:context="com.cmpe277.myapp.HomePage" >
+
+    <item
+        android:id="@+id/add_recipe"
+        android:title="@string/add_recipe_str"
+        android:orderInCategory="200"
+        app:showAsAction="always|withText"/>
+  
+    <item
+        android:id="@+id/allRecipesList"
+        android:title="@string/allRecipelist_str"
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"/>
+  
+    <item
+        android:id="@+id/myfavList"
+        android:title="@string/myfavlist_str"
+        android:orderInCategory="300"
+        app:showAsAction="always|withText"/>
+     
+   </menu>

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cmpe277.myapp.LoadFavRecipe" >
+
+   
+    <TextView
+        android:id="@+id/recipeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:text="@string/recipe_name" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+    <EditText
+        android:id="@+id/recipeNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"  
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/green"
+        android:textColor="#000000"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/recipeNameTextView" />
+    
+     <TextView
+        android:id="@+id/prepTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeNameTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="28dp"
+        android:text="@string/prepartionTime_string"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+    
+    <EditText
+        android:id="@+id/prepTimeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recipeNameEditText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/prepTimeTextView"
+        android:background="@color/green"
+        android:ems="10"
+        android:inputType="text|time"
+        android:textColor="#000000" />
+         
+    <TextView
+        android:id="@+id/recipeIngredientsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/prepTimeTextView"  
+        android:text="@string/recipe_ingredients" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+    <EditText
+        android:id="@+id/recipeIngredientsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@id/prepTimeEditText" 
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:background="@color/green"
+        android:gravity="top|center_vertical"
+        android:lines="20"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="#000000"
+        android:inputType="textMultiLine"
+        android:layout_toRightOf="@+id/recipeIngredientsTextView" />
+
+     <TextView
+         android:id="@+id/procedureTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/recipeNameTextView"
+         android:layout_below="@+id/recipeIngredientsEditText"
+         android:layout_marginTop="26dp"
+         android:text="@string/procedure_string"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#000000" />
+
+     <EditText
+         android:id="@+id/procedureEditText"
+         android:layout_width="wrap_content"
+         android:layout_height="90dp"
+         android:layout_alignLeft="@+id/recipeIngredientsEditText"
+         android:layout_alignTop="@+id/procedureTextView"
+         android:background="@color/green"
+         android:ems="10"
+         android:gravity="top|center_vertical"
+         android:inputType="textMultiLine"
+         android:lines="20"
+         android:scrollbars="vertical"
+         android:singleLine="false"
+         android:textColor="#000000" >
+
+         <requestFocus />
+     </EditText>  
+     
+</RelativeLayout>

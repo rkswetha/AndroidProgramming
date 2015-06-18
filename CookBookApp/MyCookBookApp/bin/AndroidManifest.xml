@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cmpe277.myapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".ParseApplication"
+        android:allowBackup="true"
+        android:background="@color/green"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:background="@color/green"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cmpe277.myapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MyFavRecipe"
+            android:label="@string/title_activity_my_fav_recipe" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cmpe277.myapp.HomePage" />
+        </activity>
+        <activity
+            android:name=".ListAllRecipes"
+            android:label="@string/title_activity_list_all_recipes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cmpe277.myapp.HomePage" />
+        </activity>
+        <activity
+            android:name=".NewRecipe"
+            android:label="@string/title_activity_new_recipe" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cmpe277.myapp.HomePage" />
+        </activity>
+        <activity
+            android:name=".LoadRecipe"
+            android:label="@string/title_activity_load_recipe" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cmpe277.myapp.ListAllRecipes" />
+        </activity>
+        <activity
+            android:name=".LoadFavRecipe"
+            android:label="@string/title_activity_load_fav_recipe" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cmpe277.myapp.MyFavRecipe" />
+        </activity>
+    </application>
+
+</manifest>
