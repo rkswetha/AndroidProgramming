@@ -2,7 +2,7 @@
 # MyCookBook App 
 --------------
 
-> An Individual project developed for CMPE277 (Fall 2014)
+> An App developed for CMPE277 (Fall 2014)
 > at San Jose State University
  - Title: MyCookBook App
  
@@ -23,7 +23,3 @@
 ##Basic Configuration
 --------------
 * Android 4.4 Kitkat , API 19 
-
-##App screenshots
-----------------------------------------
-![Screenshot](/screenshot/Loginscreen.png?raw=true)
