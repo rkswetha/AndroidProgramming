@@ -1,6 +1,6 @@
 # AndroidProgramming
-# JSONFileReader Program
---------------
+# CertificatePinning Program
+----------------------------
 
 > Android program to demonstrate Man in the middle attack using Certificate pinning. 
 
