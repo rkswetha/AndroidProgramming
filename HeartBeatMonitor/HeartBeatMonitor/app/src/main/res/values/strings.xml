@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HeartBeatMonitor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_newalarm">New Alarm</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
+
+    <string name="title_activity_alarm_configuration">AlarmConfiguration</string>
+    <string name="title_activity_alarm_list">AlarmList</string>
+    <string name="setalarm_label">Set Alarm</string>
+    <string name="date_label">Choose Date</string>
+    <string name="time_label">Choose Time</string>
+    <string name="title_activity_spotify">SpotifyActivity</string>
+    <string name="title_activity_alarm_list_entry">AlarmListEntry</string>
+</resources>

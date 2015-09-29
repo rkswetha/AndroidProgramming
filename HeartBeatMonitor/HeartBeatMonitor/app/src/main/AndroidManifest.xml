@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="heartbeatmonitor.project.edu.heartbeatmonitor" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        // Needed for LoginActivity to work
+        <activity
+            android:name="com.spotify.sdk.android.authentication.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".AlarmConfiguration"
+            android:label="@string/title_activity_alarm_configuration" >
+        </activity>
+        <activity
+            android:name=".AlarmList"
+            android:label="@string/title_activity_alarm_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".SpotifyActivity"
+            android:label="@string/title_activity_spotify" >
+        </activity>
+        <activity
+            android:name=".AlarmListEntry"
+            android:label="@string/title_activity_alarm_list_entry" >
+        </activity>
+    </application>
+
+</manifest>
